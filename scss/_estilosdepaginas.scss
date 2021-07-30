@@ -1,0 +1,233 @@
+// header - footer
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    .logo-header {
+        width: 80px;
+        height: 80px;
+      }
+      
+          @include header-footer();
+          @include header-footer_nav("true");
+      
+
+  }
+
+footer {
+    
+     align-items: center;
+      
+      
+      .margen-icono {
+        margin: 25px;
+      }
+      @include header-footer();
+      @include header-footer_nav("false");
+      .logo {
+        margin-left: 10px;
+        font-size: size(8);
+        font-family:$primary-font;
+        color: white;
+        .copyright {
+            font-size: size(8);
+            font-family:$primary-font;
+          }
+      }
+}
+
+// index
+
+main {
+    .banner-inicio {
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/1.jpg);
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size:size(20);
+            text-transform: uppercase;
+            font-weight: 900;
+            color: white;
+            max-width: 500px;
+            text-align: center;
+            -webkit-text-stroke: 2px black;
+            font-family:$primary-font;
+            margin-right: 20px;
+            margin-top: 30px;
+            text-shadow: -4px 3px 0 #369681, -10px 7px 1px #0a0e27d0;
+        }
+      }
+      
+}
+.nosotros{
+    .nosotros-index {
+        font-size: size(18);
+      }
+}
+
+
+
+//   paquetes
+
+.contenedor-paquetes-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+
+    @include paquetes-planes();
+      
+      @each $numero, $lugar in $lugares{
+          .paquete-#{$numero}{
+            background-image: url(../img/Paquetes/#{$lugar}.jpg);
+            
+            @if $numero < 3 {
+                background-position: center left;
+                background-size: cover;
+            } @else if $numero == 4 {
+                background-position: top left;
+                background-size: cover;
+
+            }@else {
+                background-position: center center;
+                background-size: cover;
+            }
+          }
+      }
+              
+            
+
+       
+      }
+
+// sgrupales
+
+.contenedor-paquetes-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+
+    @include paquetes-planes();
+
+    @for $i from 1 through 4 {
+        .grupo#{$i}{
+            background-image: url("../img/Paquetes/grupo#{$i}.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+
+  }
+
+// asalviajero
+
+.contenedor-planes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .oferta-planes {
+        display: flex;
+        width: 350px;
+        height: 360px;
+        margin: 30px 0 15px 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+        .contenedortitulo-planes {
+            width: 100%;
+            height: 50px;
+            border-bottom: 0.8px solid black;
+            background-color: $secondary-color;
+            display: inline-block;
+            text-align: center;
+          }
+          .contenedor-tarifa ul {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 80px;
+            justify-content: center;
+            align-content: center;
+            border-bottom: 1px solid #dfd7d7;
+            background-color: whitesmoke;
+          }
+          .boton {
+            font-weight: 800;
+            font-family: $primary-font;
+            font-size:size(12.5);
+            color: white;
+            -webkit-text-stroke: 0.8px black;    
+            width: 100%;
+            margin-bottom: 15px;
+            background-color:$primary-color;
+            padding: 20px;
+
+            &:hover{
+                background-color:$secondary-color;
+                cursor: pointer;
+
+            }
+
+            }
+          }
+      }
+
+
+
+  
+.carousel-size {
+    height: 65vh;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+// formulario
+
+.contenedor-formulario {
+    display: flex;
+    margin-top: 15px;
+
+    
+    form {
+        background-color: whitesmoke;
+        font-family:$primary-font;
+        font-weight: 400;
+        margin: auto;
+        width: 600px;
+        padding: 15px 20px;
+        border-radius: 8px;
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            font-size:size(8.5);
+        }
+        textarea {
+            resize: none;
+        }
+  
+        button {
+            background-color:$primary-color;
+            color: white;
+            padding: 20px;
+            width:100%;
+            margin-bottom: 5px;
+    
+
+            &:hover {
+                background-color:$secondary-color;
+                cursor: pointer;
+            }
+        }
+    }    
+}

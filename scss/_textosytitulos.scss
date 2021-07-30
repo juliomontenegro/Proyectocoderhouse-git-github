@@ -1,0 +1,67 @@
+// texto
+
+.texto-lugares {
+    font-family:$primary-font;
+    color: white;
+    font-weight: 600;
+    font-size:size(12);
+    -webkit-text-stroke: 0.2px black;
+    position: absolute;
+    top: 140px;
+    left: 10px;
+  }
+  .texto-dias,
+  .texto-precio {
+    margin: 3px 10px;
+    color: white;
+    font-family:$secondary-font;
+    font-weight: 300;
+    font-size:size(8);
+  }
+  
+  .titulos {
+    color: $color-font_title;
+    font-family:$primary-font;
+    font-style: italic;
+    font-size:size(12.5);
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    -webkit-text-stroke: 1px rgb(216, 74, 74);
+  }
+  .texto {
+    font-family:$secondary-font;
+    color:$color-font_text;
+    font-weight: 400;
+    margin: 30px 10% 30px 10%;
+    font-size: size(8);
+  }
+  .texto-ofertas {
+    color: white;
+    font-family:$secondary-font;
+    font-weight: 300;
+    font-size:size(6);
+    margin: 0px 5px 0px 5px;
+  }
+  .textotitulo-planes {
+    font-weight: 800;
+    font-family:$primary-font;
+    font-size:size(12.5);
+    color: white;
+    margin: 10px 0;
+    -webkit-text-stroke: 0.8px black;
+  }
+  .texto-planes {
+    color:$color-font_text;
+    font-weight: lighter;
+    font-size:size(7);
+    padding-top: 5px;
+    font-family:$secondary-font;
+  }
+  .textoprecio-planes {
+    font-family:$secondary-font;
+    font-weight: 600;
+    font-size:size(8);
+    color:$color-font_title;
+    -webkit-text-stroke: 0.4px rgb(216, 74, 74);
+  }

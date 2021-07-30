@@ -1,0 +1,34 @@
+// media queries
+  
+@media (max-width: 768px) {
+    main {
+      flex-grow: 0;
+    }
+    .hide-texto-m {
+      display: none;
+    }
+    .carousel-size {
+      height: 40vh;
+    }
+    .banner-inicio {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .hide-texto-s {
+      display: none;
+    }
+    .texto-ofertas {
+      font-size:size(5);
+    }
+    .texto-lugares {
+      font-size:size(10);
+      top: 160px;
+    }
+    header .enlaces-nav {
+      display: inline-block;
+      background-color:$primary-color;
+      width: 100%;
+    }
+  }
