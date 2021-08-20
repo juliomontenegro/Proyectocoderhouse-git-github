@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Aprovechá las ofertas especiales en seguro medico y asistencia al viajero, encontra el plan hecho a tu medida">
     <meta name="keywords" content="asistencia viajes, seguro de viajes, medico, planes, ofertas, tarifa, enfermedad, seguro medico">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/redu.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -28,12 +22,12 @@
   </head>
   <body>
     <header class="header">
-      <div class="logo-header">
+      <div>
         <a href="index.html"
           ><img src="img/logo80x80.gif" alt="logo del sitio"
         /></a>
       </div>
-      <nav class="navbar navbar-expand-sm navbar-dark"> 
+      <nav class="navbar navbar-expand-md navbar-dark"> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon burguer"></span>
           </button>
@@ -74,17 +68,32 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
-            <img src="./img/Aviajero/1a.jpg" class="d-block w-100 carousel-size img-fluid" alt="una mano sosteniendo un corazon">
+            <picture>
+              <source media="(max-width: 575px )" srcset="./img/Aviajero/1c.png">
+              <source media="(min-width: 576px ) and (max-width:992px)" srcset="./img/Aviajero/1b.png">
+              <source media="(min-width: 993px)" srcset="./img/Aviajero/1a.png">
+              <img src="./img/Aviajero/1a.png" class="d-block w-100 carousel-size" alt="una mano sosteniendo un corazon una doctora y un estetoscopio">
+            </picture>
           </div>
           <div class="carousel-item" data-bs-interval="6000">
-            <img src="./img/Aviajero/2a.jpg" class="d-block w-100 carousel-size img-fluid" alt="medico conversando con un paciente">
+            <picture>
+              <source media="(max-width: 575px )" srcset="./img/Aviajero/2c.png">
+              <source media="(min-width: 576px ) and (max-width:992px)" srcset="./img/Aviajero/2b.png">
+              <source media="(min-width: 993px)" srcset="./img/Aviajero/2a.png">
+              <img src="./img/Aviajero/2a.png" class="d-block w-100 carousel-size" alt="medicos conversando con sus paciente">
+            </picture>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
-            <img src="./img/Aviajero/3a.jpg" class="d-block w-100 carousel-size img-fluid" alt="medico revisando un paciente">
+            <picture>
+              <source media="(max-width: 575px )" srcset="./img/Aviajero/3c.png">
+              <source media="(min-width: 576px ) and (max-width:992px)" srcset="./img/Aviajero/3b.png">
+              <source media="(min-width: 993px)" srcset="./img/Aviajero/3a.png">
+              <img src="./img/Aviajero/3a.png" class="d-block w-100 carousel-size" alt="medicos atendiendo pacientes">
+            </picture>
           </div>
         </div>
       </div>
-      <h2 class="titulos">Elegi tu Plan Ideal</h2>
+      <h2 class="titulos heartbeat">- Elegi tu Plan Ideal -</h2>
       <div class="contenedor-planes">
         <div class="oferta-planes">
           <div class="contenedortitulo-planes">

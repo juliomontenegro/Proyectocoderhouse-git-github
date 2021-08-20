@@ -1,19 +1,33 @@
 // media queries
   
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     main {
       flex-grow: 0;
     }
     .hide-texto-m {
       display: none;
     }
-    .carousel-size {
-      height: 40vh;
-    }
+    
     .banner-inicio {
       height: 400px;
     }
+    .contenedor-formulario{
+      form{
+        textarea{
+          height: 150px;
+        }
+        button{
+          font-size: size(9);
+        }
+      }
+    }
+    header .enlaces-nav {
+      display: inline-block;
+      background-color:$primary-color;
+      width: 100%;
+    }
   }
+ 
   
   @media (max-width: 575px) {
     .hide-texto-s {
@@ -26,9 +40,5 @@
       font-size:size(10);
       top: 160px;
     }
-    header .enlaces-nav {
-      display: inline-block;
-      background-color:$primary-color;
-      width: 100%;
-    }
+    
   }

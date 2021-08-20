@@ -5,10 +5,7 @@ header{
     top: 0;
     z-index: 9999;
 
-    .logo-header {
-        width: 80px;
-        height: 80px;
-      }
+  
       
           @include header-footer();
           @include header-footer_nav("true");
@@ -134,6 +131,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: auto;
+    max-width:1854px;
 
     .oferta-planes {
         display: flex;
@@ -185,47 +184,74 @@ main {
 
   
 .carousel-size {
-    height: 65vh;
-    max-width: 1400px;
+    min-height: 200px;
+    max-width: 1584px;
     margin: auto;
+
   }
 
 // formulario
 
 .contenedor-formulario {
     display: flex;
-    margin-top: 15px;
+    margin-top: 40px;
+    
 
     
     form {
-        background-color: whitesmoke;
+        background-color: $primary-color;
         font-family:$primary-font;
         font-weight: 400;
         margin: auto;
         width: 600px;
-        padding: 15px 20px;
+        padding:30px;
         border-radius: 8px;
+
+        label{
+            font-size: size(8);
+            color: white ;
+        }
 
         input,
         textarea {
+            font-weight: 600;
+            color: $color-font_title;
             width: 100%;
-            margin-bottom: 15px;
-            font-size:size(8.5);
+            margin-bottom:15px;
+            font-size:size(10);
+            background: none;
+            border:none;
+            outline: 0;
+            border-bottom: 1px solid $secondary-color;
+            &:focus{
+                background: white;
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            
+           
         }
+        
+        
         textarea {
+            
+            height: 300px;
             resize: none;
         }
   
         button {
-            background-color:$primary-color;
+            font-weight: 800;
+            font-family:$primary-font;
+            font-size:size(12);
+            -webkit-text-stroke: 0.8px black;
+            background-color:$secondary-color;
             color: white;
-            padding: 20px;
+            padding: 10px;
             width:100%;
-            margin-bottom: 5px;
-    
-
+            margin-bottom: 10px;
+            border-radius: 8px;
             &:hover {
-                background-color:$secondary-color;
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                background-color:$color-font_title;
                 cursor: pointer;
             }
         }

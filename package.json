@@ -1,0 +1,23 @@
+{
+  "name": "proyectocoderhouse-git-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "purge": "purgecss --css css/main.css --content *.html --output css/redu.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliomontenegro/Proyectocoderhouse-git-github.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliomontenegro/Proyectocoderhouse-git-github/issues"
+  },
+  "homepage": "https://github.com/juliomontenegro/Proyectocoderhouse-git-github#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}

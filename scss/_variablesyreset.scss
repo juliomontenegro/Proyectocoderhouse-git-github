@@ -113,6 +113,9 @@ $unidad:2px;
         margin: 30px 0 15px 0;
         position: relative;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        &:hover{
+          opacity:1;
+        }
 
         .oferta-paquete {
             display: flex;
